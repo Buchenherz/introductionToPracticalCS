@@ -1,6 +1,6 @@
 
 # Variable declaration (user input)
-base = int(input("Enter a base: "))
+# 3base = int(input("Enter a base: "))
 n = int(input("Enter outcome: "))
 
 # For testing purposes
@@ -29,5 +29,5 @@ def PotenzAndBase(n):
             continue
 
 
-Potenzerkenner(base, n)
-# PotenzAndBase(n)
+# Potenzerkenner(base, n)
+PotenzAndBase(n)
