@@ -1,4 +1,3 @@
-import sys;
 
 n = int(input("Enter your number: "))
 
@@ -11,15 +10,18 @@ def Interesting(n):
     # Calculate Checksum
     while n > 0:
         checksum += n % 10
+        # would previously return a float value
         n = int(n / 10)
     print("Checksum: ", checksum)
 
     # Decide if interesting number
     while i <= checksum:
+        # Is checksum^i == to previous N?
         if (checksum ** i) == initialN:
+            # print(initialN)
+            # print(" is an interesting number!)
             print("Interesting number!")
             print("%d = %d ^ %d" % (initialN, checksum, i))
-            # print(initialN)
             return i
         else:
             i += 1

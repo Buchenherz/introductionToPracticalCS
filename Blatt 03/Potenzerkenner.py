@@ -1,12 +1,14 @@
-import sys
 
-#base = int(input("Enter a base: "))
-#n = int(input("Enter outcome: "))
+# Variable declaration (user input)
+base = int(input("Enter a base: "))
+n = int(input("Enter outcome: "))
 
-#base = 2
-n = 25
+# For testing purposes
+# base = 2
+# n = 25
 
 def Potenzerkenner(base,n):
+    # declare i as counting variable
     i = 1
     while i <= n:
         if((base ** i) == n):
@@ -27,5 +29,5 @@ def PotenzAndBase(n):
             continue
 
 
-
-PotenzAndBase(n)
+Potenzerkenner(base, n)
+# PotenzAndBase(n)
