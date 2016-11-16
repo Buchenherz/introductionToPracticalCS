@@ -15,7 +15,7 @@ def initArray(z, n):
         a[i] = random.randint(0,z)
     # So we see something
     # print(a)
-    # Return
+    # Return the array
     return a
 
 # Function call
