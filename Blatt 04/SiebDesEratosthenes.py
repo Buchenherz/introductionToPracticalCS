@@ -1,4 +1,4 @@
-limit = 12000000 #int(input("Print prime numbers to: ")) # Whole number
+limit = 1000 #int(input("Print prime numbers to: ")) # Whole number
 
 flags = {}
 for i in range(2, limit + 1):
@@ -15,6 +15,3 @@ def getPrimes(limit):
                 m += p
 
 getPrimes(limit)
-#while limit <= 1000000:
-#    getPrimes(limit)
-#    limit *= 10
