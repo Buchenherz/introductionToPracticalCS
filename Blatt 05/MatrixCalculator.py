@@ -2,6 +2,10 @@ import random
 
 # creates matrix with m columns and n rows and fills it
 # with random ints between 0 and 100
+
+# For testing only, uncomment all m, n's and scalar
+# scalar = m = n = x = y = 200
+
 def matrix(m,n):
 
     # [[0 for x in range(cols_count)] for x in range(rows_count)]
@@ -72,7 +76,7 @@ def matrix_multiplication():
         b = matrix(x, y)
 
         if n is x:
-            Matrix = [[0 for x in range(m)] for y in range(n)]
+            Matrix = [[0 for x in range(m)] for y in range(x)]
             for j in range(0, m):
                 for i in range(0, n):
                     for k in range(0,n):
@@ -117,24 +121,16 @@ def matrix_calculator():
         option = int(input("Choose an option: "))
 
         if option is 0:
-            print(chr(27) + "[2J")
             return SystemExit
         elif option is 1:
-            print(chr(27) + "[2J")
             matrix_addition()
         elif option is 2:
-            print(chr(27) + "[2J")
             matrix_multiplication()
         elif option is 3:
-            print(chr(27) + "[2J")
             scalar_multiplication()
 
-
-
-
-
 matrix_calculator()
-# matrix_transposistion()
-# matrix_multiplication()
-# matrix_addition()
-# scalar_multiplication(matrix(m, n), m, n, 3)
+#matrix_transposistion()
+#matrix_multiplication()
+#matrix_addition()
+#scalar_multiplication()
