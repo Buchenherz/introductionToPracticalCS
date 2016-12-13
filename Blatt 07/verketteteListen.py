@@ -50,8 +50,10 @@ def delete(data, list):
 	while i.next is not None and i.next.data is not data:
 		i = i.next
 	if i.next is not None:
-	# FIXME i have no clue
-		i.next = i.next.next        #zeigt auf "übernächsten wert", da "nächste" Wert der neue Wert ist.
+	# if the next value is the wanted element
+	# point that element to the next.next element
+	# thus skipping the .next element 
+		i.next = i.next.next
 	return list
 
 

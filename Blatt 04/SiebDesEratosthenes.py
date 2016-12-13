@@ -1,4 +1,4 @@
-limit = 1000 #int(input("Print prime numbers to: ")) # Whole number
+limit = 100 #int(input("Print prime numbers to: ")) # Whole number
 
 flags = {}
 for i in range(2, limit + 1):
